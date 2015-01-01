@@ -1,0 +1,111 @@
+body, div ,ul,li{
+    padding: 0;
+    margin: 0;
+}
+#container{width: 1280px;height: 1024px;
+    background: url("/images/back.png")no-repeat;
+    margin: 0 auto;position: relative;
+}
+#header{
+    width: 1120px;
+    height: 200px;
+    background: url("/images/header.png")no-repeat;
+    position: relative;
+
+    top:0;
+    left: 80px;
+}
+#user{
+
+    position: absolute;
+    margin-top:150px ;
+    margin-left: 10px;
+    text-align: center;
+}
+#content{
+    width:1120px;
+    height: 750px;
+
+    position: relative;
+    top:0;
+    left: 80px;
+
+}
+
+#sidebar{
+    width: 200px;
+    height: 750px;
+    background: url("/images/sidebar.png")no-repeat;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+
+}
+#main{
+    width: 900px;
+    height: 750px;
+    position: absolute;
+    padding-top: 20px;
+    margin-top: 0;
+    margin-left: 260px;
+}
+#frame{
+    width:900px;
+    height: 750px;
+    position: absolute;
+
+    top: 0;
+    right: 40px;
+
+}
+#sidebar ul{
+    list-style: none;
+    text-align: center;
+    font-size: 20px;
+    line-height:50px;
+    font-weight: 900;
+
+}
+#footer{
+    width:1120px;
+    height: 35px;
+    background: url("/images/footer.png")no-repeat;
+    position: absolute;
+    margin-top: 0;
+    margin-left: 80px;
+    text-align: center;
+    font-size: 20px;
+    line-height:50px;
+    font-weight: 900;
+}
+.menu {width: 200px}
+.menu li{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3px;
+}
+.menu a{
+    display: block;
+    width: 200px;
+    margin: 0;
+    color: #020202;
+    background: url("/images/button.png");
+    text-decoration: none;
+}
+.menu a:hover {background: #485899
+}
+.menu ul li {padding: 0;font-size: 15px;}
+.menu ul a {background: url("/images/sidebutton.png")}
+.hidden {display: none;}
+#dateside{
+    background: url("/images/datesider.png");
+    width: 500px;
+    height: 60px;
+    position: absolute;
+    top: 140px;
+    left:200px
+}
+#datetime{
+    text-align: center;
+}
+

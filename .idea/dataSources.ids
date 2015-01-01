@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="wms" uuid="ff6b31f6-324c-481f-a767-19d19ee155bd">
+    <database-info product="MySQL" version="5.5.38" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.34 ( Revision: jess.balint@oracle.com-20141014163213-wqbwpf1ok2kvo1om )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
+    <schema name="" catalog="wms"/>
+    <table name="tbadress" schema="" catalog="wms" type="TABLE">
+      <column name="Adress" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="Adress"/>
+      <index name="Adress_UNIQUE" unique="true" columns="Adress"/>
+    </table>
+    <table name="tbcheck" schema="" catalog="wms" type="TABLE">
+      <column name="IncomingNo" sqlType="VARCHAR" precision="16" scale="0" nullable="false" jdbcType="12"/>
+      <column name="D" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="E" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="tbcheckout" schema="" catalog="wms" type="TABLE">
+      <column name="OutNo" sqlType="VARCHAR" precision="16" scale="0" nullable="false" jdbcType="12"/>
+      <column name="E" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <column name="G" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="R" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="T" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <column name="U" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <column name="V" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <column name="W" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <column name="X" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Y" sqlType="VARCHAR" precision="10" scale="0" nullable="true" jdbcType="12"/>
+      <column name="state" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="tbincoming" schema="" catalog="wms" type="TABLE">
+      <column name="IncomingNo" sqlType="VARCHAR" precision="16" scale="0" nullable="false" jdbcType="12"/>
+      <column name="ItemId" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="QTY" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Lot" sqlType="VARCHAR" precision="8" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Adress" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Boxcount" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="state" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Sysdata" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+    </table>
+    <table name="tbmaster" schema="" catalog="wms" type="TABLE">
+      <column name="ItemId" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Count" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="LotNo" sqlType="VARCHAR" precision="8" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Adress" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Boxcount" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Print" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="ItemId,Adress"/>
+      <index name="ItemId_3" unique="false" columns="Adress"/>
+    </table>
+    <table name="tboutlist" schema="" catalog="wms" type="TABLE">
+      <column name="OutNo" sqlType="VARCHAR" precision="16" scale="0" nullable="false" jdbcType="12"/>
+      <column name="ItemId" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Count" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Partment" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="LotNo" sqlType="VARCHAR" precision="8" scale="0" nullable="false" jdbcType="12"/>
+      <column name="PartNo" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="SysData" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="Print" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Remark" sqlType="VARCHAR" precision="80" scale="0" nullable="true" jdbcType="12"/>
+    </table>
+    <table name="tboutprint" schema="" catalog="wms" type="TABLE">
+      <column name="OutNo" sqlType="VARCHAR" precision="16" scale="0" nullable="false" jdbcType="12"/>
+      <column name="ItemId" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Adress1" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Count1" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Adress2" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Count2" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="Adress3" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Count3" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Adress4" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Count4" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Adress5" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Count5" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Partment1" sqlType="VARCHAR" precision="20" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Ct1" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="Partment2" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Ct2" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="Partment3" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Ct3" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="Partment4" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Ct4" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="Partment5" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Ct5" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="Partment6" sqlType="VARCHAR" precision="20" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Ct6" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="Box" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Count" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="SysData" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="Print" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="tbsystem" schema="" catalog="wms" type="TABLE">
+      <column name="Userid" sqlType="VARCHAR" precision="8" scale="0" nullable="false" jdbcType="12"/>
+      <column name="SysData" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="Record" sqlType="VARCHAR" precision="45" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="Userid"/>
+      <index name="Userid_UNIQUE" unique="true" columns="Userid"/>
+    </table>
+    <table name="tbuser" schema="" catalog="wms" type="TABLE">
+      <column name="UserId" sqlType="VARCHAR" precision="8" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Username" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Password" sqlType="VARCHAR" precision="6" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Power" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="logindate" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="logincount" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="UserId"/>
+      <index name="UserId_UNIQUE" unique="true" columns="UserId"/>
+    </table>
+    <table name="tbzjzk" schema="" catalog="wms" type="TABLE">
+      <column name="ItemId" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Count" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="ItemId"/>
+      <index name="OutNo_UNIQUE" unique="true" columns="ItemId"/>
+    </table>
+  </data-source>
+</component>

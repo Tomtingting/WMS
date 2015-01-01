@@ -1,0 +1,48 @@
+body, div ,ul,li{
+    padding: 0;
+    margin: 0;
+}
+#container{width: 1280px;height: 1024px;
+    background: url("/images/back.png")no-repeat;
+    margin: 0 auto;position: relative;
+}
+#login{
+    width: 800px;
+    height: 600px;
+    background: url("/images/login.png")no-repeat;
+    position: absolute;
+    left: 240px;
+    top: 212px;
+}
+#loginbutton{
+    width: 279px;
+    height: 39px;
+    background: url("/images/loginbutton.png")no-repeat;
+    position: absolute;
+    left: 260px;
+    top: 370px;
+}
+#user{
+    width: 279px;
+    height: 39px;
+    background: url("/images/user.png")no-repeat;
+    position: absolute;
+    left: 260px;
+    top: 250px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    color: #ffffff;
+}
+#password{
+    width: 279px;
+    height: 39px;
+    background: url("/images/password.png")no-repeat;
+    position: absolute;
+    left: 260px;
+    top: 300px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    color: #ffffff;
+}
