@@ -45,11 +45,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.2537313" vertical-offset="0" max-vertical-offset="3720">
-              <caret line="88" column="2" selection-start-line="88" selection-start-column="2" selection-end-line="88" selection-end-column="2" />
+            <state vertical-scroll-proportion="13.818182" vertical-offset="528" max-vertical-offset="3720">
+              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
               <folding>
                 <marker date="1423021995000" expanded="true" signature="1301:1315" placeholder="..." />
               </folding>
@@ -57,7 +57,57 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="logincheck.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PHP/logincheck.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.07462686" vertical-offset="246" max-vertical-offset="648">
+              <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+              <folding>
+                <marker date="1420090120000" expanded="true" signature="127:192" placeholder="select * fro..tbuser..." />
+                <marker date="1420090120000" expanded="true" signature="427:507" placeholder="update tbuse..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zkupdate.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHP/zkupdate.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="2.909091" vertical-offset="96" max-vertical-offset="1032">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cklogin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHP/cklogin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="264">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compare.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PHP/compare.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2328">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1404709206000" expanded="true" signature="545:592" placeholder="select sum(Q..tbincoming..." />
+                <marker date="1404709206000" expanded="true" signature="701:738" placeholder="select sum(E..tbcheck..." />
+                <marker date="1404709206000" expanded="true" signature="861:1027" placeholder="select ItemI..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -82,7 +132,7 @@
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -145,7 +195,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="options.lastSelected" value="settings.php.debug.servers" />
+    <property name="options.lastSelected" value="vcs.Git" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -225,7 +275,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -302,8 +352,8 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="648">
           <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
           <folding>
-            <marker date="1420079351000" expanded="true" signature="-1:-1" placeholder="select * fro..tbuser..." />
-            <marker date="1420079351000" expanded="true" signature="-1:-1" placeholder="update tbuse..." />
+            <marker date="1420090120000" expanded="true" signature="127:192" placeholder="select * fro..tbuser..." />
+            <marker date="1420090120000" expanded="true" signature="427:507" placeholder="update tbuse..." />
           </folding>
         </state>
       </provider>
@@ -540,13 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/cklogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="433">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Application Support/appsolute/MAMP PRO/phpMyAdmin/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6567164" vertical-offset="0" max-vertical-offset="15888">
@@ -740,23 +783,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PHP/logincheck.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53482586" vertical-offset="49" max-vertical-offset="648">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state vertical-scroll-proportion="13.818182" vertical-offset="528" max-vertical-offset="3720">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
           <folding>
-            <marker date="1420079351000" expanded="true" signature="-1:-1" placeholder="select * fro..tbuser..." />
-            <marker date="1420079351000" expanded="true" signature="-1:-1" placeholder="update tbuse..." />
+            <marker date="1423021995000" expanded="true" signature="1301:1315" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/PHP/zkupdate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.2537313" vertical-offset="0" max-vertical-offset="3720">
-          <caret line="88" column="2" selection-start-line="88" selection-start-column="2" selection-end-line="88" selection-end-column="2" />
+        <state vertical-scroll-proportion="2.909091" vertical-offset="96" max-vertical-offset="1032">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/cklogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="433">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/compare.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2328">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1423021995000" expanded="true" signature="1301:1315" placeholder="..." />
+            <marker date="1404709206000" expanded="true" signature="545:592" placeholder="select sum(Q..tbincoming..." />
+            <marker date="1404709206000" expanded="true" signature="701:738" placeholder="select sum(E..tbcheck..." />
+            <marker date="1404709206000" expanded="true" signature="861:1027" placeholder="select ItemI..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PHP/logincheck.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.07462686" vertical-offset="246" max-vertical-offset="648">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+          <folding>
+            <marker date="1420090120000" expanded="true" signature="127:192" placeholder="select * fro..tbuser..." />
+            <marker date="1420090120000" expanded="true" signature="427:507" placeholder="update tbuse..." />
           </folding>
         </state>
       </provider>

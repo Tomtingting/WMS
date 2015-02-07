@@ -7,7 +7,7 @@
  $info=mysql_fetch_array($result);
 
 if($info==true){
-    echo"<script>window.location='http://wms:8888/index.php';</script>";
+    echo"<script>window.location='http://127.0.0.1:8888/index.php';</script>";
     $count=$info['logincount'];
     $count++;
     $date=date('Y-m-d H-i-s');

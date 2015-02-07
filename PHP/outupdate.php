@@ -49,7 +49,7 @@ $_SESSION['no']=$No;
 include("conn.php");
 
 $datetime=date("Y-m-d H:i:s");//获取当前时间
-$sql_p="select OutNo,G,E,R,T,U,V,W,X,Y from tbcheckout where OutNo='".$No."' group by G,E,T,R";
+$sql_p="select OutNo,G,E,P,R,T,U,V,W,X,Y from tbcheckout where OutNo='".$No."' group by G,E,T,R,P";
 //echo $sql_p;
 $result=mysql_query($sql_p);
 
@@ -61,7 +61,8 @@ for($j=0;$j<$rowcount1;$j++){
     $outno=$row['OutNo'];
     $itemid=$row['G'];
     $partment=$row['E'];
-    $partno=$row['PartNo'];
+    $nolist=$row['P'];
+    $partno=$row['R'];
     $lotno=$row['T'];
     $count=$row['U'];
     $lotno1=$row['V'];
@@ -69,7 +70,7 @@ for($j=0;$j<$rowcount1;$j++){
     $lotno2=$row['X'];
     $count2=$row['Y'];
     if(empty($lotno1)){
-        $sql="INSERT INTO tboutlist(OutNo,ItemId,Count,Partment,LotNo,PartNo,Sysdata,Print) VALUES('".$row['OutNo']."','".$row['G']."','".$row['U']."','".$row['E']."','".$row['T']."','".$row['R']."','".$datetime."','".$print1."')";
+        $sql="INSERT INTO tboutlist(OutNo,ItemId,Count,Partment,LotNo,Nolist,PartNo,Sysdata,Print) VALUES('".$row['OutNo']."','".$row['G']."','".$row['U']."','".$row['E']."','".$row['T']."','".$row['P']."','".$row['R']."','".$datetime."','".$print1."')";
         //echo $sql;
         mysql_query("set names utf8");
         $result1=mysql_query($sql) or die (mysql_error());
@@ -77,11 +78,11 @@ for($j=0;$j<$rowcount1;$j++){
         $result31=mysql_query($sql20);
     }
     elseif(empty($lotno2)){
-        $sql="INSERT INTO tboutlist(OutNo,ItemId,Count,Partment,LotNo,PartNo,Sysdata,Print) VALUES('".$row['OutNo']."','".$row['G']."','".$row['U']."','".$row['E']."','".$row['T']."','".$row['R']."','".$datetime."','".$print1."')";
+        $sql="INSERT INTO tboutlist(OutNo,ItemId,Count,Partment,LotNo,Nolist,PartNo,Sysdata,Print) VALUES('".$row['OutNo']."','".$row['G']."','".$row['U']."','".$row['E']."','".$row['T']."','".$row['P']."','".$row['R']."','".$datetime."','".$print1."')";
         //echo $sql;
         mysql_query("set names utf8");
         $result1=mysql_query($sql) or die (mysql_error());
-        $sql1="INSERT INTO tboutlist(OutNo,ItemId,Count,Partment,LotNo,PartNo,Sysdata,Print) VALUES('".$row['OutNo']."','".$row['G']."','".$row['W']."','".$row['E']."','".$row['V']."','".$row['R']."','".$datetime."','".$print1."')";
+        $sql1="INSERT INTO tboutlist(OutNo,ItemId,Count,Partment,LotNo,Nolist,PartNo,Sysdata,Print) VALUES('".$row['OutNo']."','".$row['G']."','".$row['W']."','".$row['E']."','".$row['V']."','".$row['P']."','".$row['R']."','".$datetime."','".$print1."')";
         //echo $sql;
         mysql_query("set names utf8");
         $result1=mysql_query($sql1) or die (mysql_error());
@@ -89,15 +90,15 @@ for($j=0;$j<$rowcount1;$j++){
         $result31=mysql_query($sql20);
     }
     else{
-        $sql="INSERT INTO tboutlist(OutNo,ItemId,Count,Partment,LotNo,PartNo,Sysdata,Print) VALUES('".$row['OutNo']."','".$row['G']."','".$row['U']."','".$row['E']."','".$row['T']."','".$row['R']."','".$datetime."','".$print1."')";
+        $sql="INSERT INTO tboutlist(OutNo,ItemId,Count,Partment,LotNo,Nolist,PartNo,Sysdata,Print) VALUES('".$row['OutNo']."','".$row['G']."','".$row['U']."','".$row['E']."','".$row['T']."','".$row['P']."','".$row['R']."','".$datetime."','".$print1."')";
         //echo $sql;
         mysql_query("set names utf8");
         $result1=mysql_query($sql) or die (mysql_error());
-        $sql1="INSERT INTO tboutlist(OutNo,ItemId,Count,Partment,LotNo,PartNo,Sysdata,Print) VALUES('".$row['OutNo']."','".$row['G']."','".$row['W']."','".$row['E']."','".$row['V']."','".$row['R']."','".$datetime."','".$print1."')";
+        $sql1="INSERT INTO tboutlist(OutNo,ItemId,Count,Partment,LotNo,Nolist,PartNo,Sysdata,Print) VALUES('".$row['OutNo']."','".$row['G']."','".$row['W']."','".$row['E']."','".$row['V']."','".$row['P']."','".$row['R']."','".$datetime."','".$print1."')";
         //echo $sql;
         mysql_query("set names utf8");
         $result1=mysql_query($sql1) or die (mysql_error());
-        $sql2="INSERT INTO tboutlist(OutNo,ItemId,Count,Partment,LotNo,PartNo,Sysdata,Print) VALUES('".$row['OutNo']."','".$row['G']."','".$row['Y']."','".$row['E']."','".$row['X']."','".$row['R']."','".$datetime."','".$print1."')";
+        $sql2="INSERT INTO tboutlist(OutNo,ItemId,Count,Partment,LotNo,Nolist,PartNo,Sysdata,Print) VALUES('".$row['OutNo']."','".$row['G']."','".$row['Y']."','".$row['E']."','".$row['X']."','".$row['P']."','".$row['R']."','".$datetime."','".$print1."')";
         //echo $sql;
         mysql_query("set names utf8");
         $result1=mysql_query($sql2) or die (mysql_error());
@@ -149,7 +150,7 @@ for($i=0;$i<$rowcount3;$i++){
                    更新tboutprint数据库
                    */
 
-        $sql9="select ItemId,sum(Count)as count,Partment,LotNo from tboutlist where OutNo='".$No."' and ItemId='".$row9['ItemId']."' group by ItemId,Partment ";
+        $sql9="select ItemId,sum(Count)as count,Partment,LotNo from tboutlist where OutNo='".$No."' and ItemId='".$row9['ItemId']."' group by ItemId,Partment,Nolist ";
 
         $result22=mysql_query($sql9);
         $rowcount5=mysql_num_rows($result22);
@@ -835,7 +836,7 @@ for($i=0;$i<$rowcount3;$i++){
                 更新tboutprint数据库
                 */
 
-                $sql9="select ItemId,sum(Count)as count,Partment,LotNo from tboutlist where OutNo='".$No."' and  ItemId='".$e."' and Print=0 group by ItemId,Partment ";
+                $sql9="select ItemId,sum(Count)as count,Partment,LotNo from tboutlist where OutNo='".$No."' and  ItemId='".$e."' and Print=0 group by ItemId,Partment,Nolist";
                 $result22=mysql_query($sql9);
 
                 $rowcount5=mysql_num_rows($result22);

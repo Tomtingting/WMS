@@ -47,7 +47,7 @@ while(!feof($handle) && $data=fgetcsv($handle,1000,',')){
 
 
 
-        $sql="insert into tbcheckout (OutNo,E,G,R,T,U,V,W,X,Y,state) values ('$order_sn','$arr_result[4]','$arr_result[6]','$arr_result[17]','$arr_result[19]','$arr_result[20]','$arr_result[21]','$arr_result[22]','$arr_result[23]','$arr_result[24]','$status')";
+        $sql="insert into tbcheckout (OutNo,E,G,P,R,T,U,V,W,X,Y,state) values ('$order_sn','$arr_result[4]','$arr_result[6]','$arr_result[15]','$arr_result[17]','$arr_result[19]','$arr_result[20]','$arr_result[21]','$arr_result[22]','$arr_result[23]','$arr_result[24]','$status')";
         //echo $sql;
         mysql_query("set names utf8");
         $result=mysql_query($sql);
